@@ -15,15 +15,18 @@ public class BohrMod {
     @EventHandler
     public void preinit(FMLPreInitializationEvent event){
         BohrBlockHandler.preInit();
+        BohrWorldHandler.preInit();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event){
         BohrBlockHandler.init();
+        BohrWorldHandler.init();
     }
 
     @EventHandler
     public void postinit(FMLPostInitializationEvent event) {
         BohrBlockHandler.postInit();
+        BohrWorldHandler.postInit();
     }
 }

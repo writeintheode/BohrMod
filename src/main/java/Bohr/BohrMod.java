@@ -16,17 +16,20 @@ public class BohrMod {
     public void preinit(FMLPreInitializationEvent event){
         BohrBlockHandler.preInit();
         BohrWorldHandler.preInit();
+        BohrItemHandler.preInit();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event){
         BohrBlockHandler.init();
         BohrWorldHandler.init();
+        BohrItemHandler.init();
     }
 
     @EventHandler
     public void postinit(FMLPostInitializationEvent event) {
         BohrBlockHandler.postInit();
         BohrWorldHandler.postInit();
+        BohrItemHandler.postInit();
     }
 }

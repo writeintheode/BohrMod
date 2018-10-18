@@ -27,7 +27,7 @@ public class BohrBock extends Block {
     @Override
     public Item getItemDropped(IBlockState state,
                                Random random, int fortune) {
-        return BohrItemHandler.bohrOre;
+        return Items.ACACIA_BOAT;
     }
 
     @Override

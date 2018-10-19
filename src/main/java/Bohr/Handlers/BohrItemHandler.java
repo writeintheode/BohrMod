@@ -15,6 +15,9 @@ public class BohrItemHandler {
 
     bohrOre = new BohrOre(lang_bohr_ore, reg_bohr_ore, 64, CreativeTabs.MATERIALS);
     modelMaker(bohrOre);
+
+    bohrIte =  new BohrIte(lang_bohr_ite,reg_bohr_ite, 64, CreativeTabs.MATERIALS);
+    modelMaker(bohrIte);
   }
 
   public static void init() {

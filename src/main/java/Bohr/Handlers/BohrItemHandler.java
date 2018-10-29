@@ -18,6 +18,18 @@ public class BohrItemHandler {
 
     bohrIte =  new BohrIte(lang_bohr_ite,reg_bohr_ite, 64, CreativeTabs.MATERIALS);
     modelMaker(bohrIte);
+
+    bohrAxe = new BohrAxe(lang_bohr_axe,reg_bohr_axe,1, BohrMaterialHandler.BOHR,CreativeTabs.TOOLS);
+    modelMaker(bohrAxe);
+
+    bohrHoe = new BohrHoe(lang_bohr_hoe, reg_bohr_hoe,1, BohrMaterialHandler.BOHR,CreativeTabs.TOOLS);
+    modelMaker(bohrHoe);
+
+    bohrPick = new BohrPick(lang_bohr_pick, reg_bohr_pick,1, BohrMaterialHandler.BOHR,CreativeTabs.TOOLS);
+    modelMaker(bohrPick);
+
+    bohrShovel = new BohrShovel(lang_bohr_shovel, reg_bohr_shovel,1, BohrMaterialHandler.BOHR,CreativeTabs.TOOLS);
+    modelMaker(bohrShovel);
   }
 
   public static void init() {

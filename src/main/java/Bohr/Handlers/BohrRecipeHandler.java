@@ -1,4 +1,10 @@
-public class BohrishRecipeHandler {
+package Bohr.Handlers;
+
+import Bohr.Handlers.BohrItemHandler;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class BohrRecipeHandler {
 
    public static void init() {
      

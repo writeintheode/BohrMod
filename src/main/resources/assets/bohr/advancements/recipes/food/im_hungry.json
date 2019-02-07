@@ -1,0 +1,32 @@
+{
+  "parent": "bohr:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:im_hungry"
+    ]
+  },
+  "criteria": {
+    "has_dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dirt"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "im_hungry"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dirt"
+    ]
+  ]
+}

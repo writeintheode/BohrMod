@@ -29,7 +29,7 @@ public class BohrWorldGenerator implements IWorldGenerator {
     int chunkSize = 16;
     int yMax=256;
     int blockCount=4;
-    int chance = 1;
+    int chance = 50;
     generateOre(BohrBlockHandler.bohrBlock.getDefaultState(), world, random,
             chunkX * chunkSize, chunkZ * chunkSize, chunkSize, yMax,
             blockCount + random.nextInt(blockCount), chance);
@@ -41,7 +41,7 @@ public class BohrWorldGenerator implements IWorldGenerator {
     for (int i = 0; i < chances; i++) {
       BlockPos pos = new BlockPos(x + random.nextInt(16), minY + random.nextInt(deltaY),
        z + random.nextInt(16));
-      if(i % 1 == 0) {
+      if(i % 100 == 0) {
         System.out.println(pos.toString()+" ->"+i+"<- ");
       }
 

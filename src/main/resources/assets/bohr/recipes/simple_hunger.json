@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DGD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dirt",
+      "data": 0
+    }
+    "G": {
+      "item": "minecraft:gravel",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "minecraft:golden_apple",
+    "data": 0
+  }
+}

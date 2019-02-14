@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class BohrMod {
     @EventHandler
     public void preinit(FMLPreInitializationEvent event){
+        System.out.println("<<<<<< Inside preinit method >>>>>>");
         BohrBlockHandler.preInit();
         BohrWorldHandler.preInit();
         BohrItemHandler.preInit();
@@ -21,6 +22,7 @@ public class BohrMod {
 
     @EventHandler
     public void init(FMLInitializationEvent event){
+        System.out.println("<<<<<< Inside init method >>>>>>");
         BohrBlockHandler.init();
         BohrWorldHandler.init();
         BohrItemHandler.init();
@@ -30,6 +32,7 @@ public class BohrMod {
 
     @EventHandler
     public void postinit(FMLPostInitializationEvent event) {
+        System.out.println("<<<<<< Inside postinit method >>>>>>");
         BohrBlockHandler.postInit();
         BohrWorldHandler.postInit();
         BohrItemHandler.postInit();
